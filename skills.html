@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Experience - Satyam Kolhe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-22%20171556-Gx06He6Qy3cfSQiSBbE7gsP5MpNcsO.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333333;
+            overflow-x: hidden;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #A5F3FC;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill-card {
+            flex: 1 1 45%;
+            max-width: 45%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card img {
+            max-width: 100%; 
+            height: auto;
+        }
+
+        .skill-info {
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .about-me, .experience {
+            margin-bottom: 40px;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .about-me p, .experience p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .experience-item p {
+            margin-bottom: 5px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            background-color: #A5F3FC;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .skill-card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link" target="_blank">Home</a>     
+            <a href="projects.html" class="nav-link" target="_blank">Projects</a>
+            <a href="certificates.html" class="nav-link" target="_blank">Certificates</a>
+            <a href="skills.html" class="nav-link" target="_blank">Skills</a>
+            <a href="contact.html" class="nav-link" target="_blank">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="about-me">
+            <h2 class="section-title">About Me</h2>
+            <p>Hello! I'm Satyam Kolhe, an aspiring data scientist with a passion for uncovering insights from complex datasets. I'm currently pursuing my BTech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at VIIT.</p>
+            <p>My journey in the world of data science began during my undergraduate studies, where I discovered my fascination with the power of data to drive decision-making and innovation. Since then, I've been continuously expanding my skills in various areas of data science, machine learning, and artificial intelligence.</p>
+            <p>I'm particularly interested in the application of AI and ML techniques to solve real-world problems, and I'm always eager to learn about new technologies and methodologies in this rapidly evolving field.</p>
+            <p>Hello! I'm Satyam Kolhe, a passionate Data Science Enthusiast. I love collecting and working on datasets and collecting valuable insights from it help organisations to make future decisions.</p>
+            <p>Along with my experience in Data Science and Machine Learning, I've worked on various projects ranging from naive work to overwhelming projects.</p>
+            <p>When I'm not coding, you can find me playing tabla, reading books or just sitting ideally listening to music.</p>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://miro.medium.com/v2/resize:fit:1200/1*snZhMEQFhoJwbM5c0CPOAw.png" alt="Supervised Machine Learning" style="width: 550px; height: 300px;">
+                    <div class="skill-info">
+                        <h3>Supervised Machine Learning</h3>
+                        <p>Python, Numpy, Pandas, Scikit-learn</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.6mpup7TQqNev53H0ROYGjwHaGY&pid=Api&P=0&h=180" alt="Data Analysis" style="width: 550px; height: 300px;">
+                    <div class="skill-info">
+                        <h3>Data Analysis</h3>
+                        <p>Matplotlib, Pyplot, Seaborn, Statistical Analysis</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.0eVnHEkf2CWqfe2oK2fzcwHaFm&pid=Api&P=0&h=180" alt="Data Related" style="width: 550px; height: 300px;">
+                    <div class="skill-info">
+                        <h3>Data Related</h3>
+                        <p>SQL, Data Gathering, Dataset Creation</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.V3s04mx4W568ztHTRKJTlAHaFP&pid=Api&P=0&h=180" alt="Deep Learning" style="width: 550px; height: 300px;">
+                    <div class="skill-info">
+                        <h3>Deep Learning</h3>
+                        <p>Neural Networks, TensorFlow, PyTorch</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-list">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">R</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Data Visualization</span>
+                <span class="skill-tag">Statistical Analysis</span>
+                <span class="skill-tag">Big Data</span>
+                <span class="skill-tag">Natural Language Processing</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Cloud Computing (AWS, GCP)</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Team Collaboration</span>
+                <span class="skill-tag">Technical Writing</span>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <h3>Data Science Intern</h3>
+                <p><strong>TechInnovate Solutions</strong> | June 2024 - August 2024</p>
+                <p>Assisted in developing predictive models for customer churn analysis, improving retention strategies by 15%. Collaborated with cross-functional teams to implement data-driven solutions.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Machine Learning Research Assistant</h3>
+                <p><strong>VIIT AI Lab</strong> | September 2023 - May 2024</p>
+                <p>Contributed to a research project on optimizing neural network architectures for edge devices. Implemented and evaluated various model compression techniques.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Data Analysis Volunteer</h3>
+                <p><strong>Local Environmental NGO</strong> | January 2023 - April 2023</p>
+                <p>Analyzed environmental data to identify pollution trends. Created visualizations and reports to support awareness campaigns.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Satyam Kolhe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

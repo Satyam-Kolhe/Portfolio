@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Satyam Kolhe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-22%20171556-Gx06He6Qy3cfSQiSBbE7gsP5MpNcsO.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333333;
+            overflow-x: hidden;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #A5F3FC;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #000000;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .about-text, .contact-info {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-image {
+            max-width: 400px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .contact-table {
+            margin: 20px auto;
+            text-align: left;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .contact-table th, .contact-table td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        .contact-table img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-text, .contact-info {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link" target="_blank">Home</a>            
+            <a href="projects.html" class="nav-link" target="_blank">Projects</a>
+            <a href="certificates.html" class="nav-link" target="_blank">Certificates</a>
+            <a href="skills.html" class="nav-link" target="_blank">Skills</a>
+            <a href="contact.html" class="nav-link" target="_blank">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="content">
+            <div class="about-text">
+                <!-- <p>Hello! I'm Satyam Kolhe, a passionate Data Science Enthusiast. I love collecting and working on datasets and collecting valuable insights from it help organisations to make future decisions.</p>
+                <p>Along with my experience in Data Science and Machine Learning, I've worked on various projects ranging from naive work to overwhelming projects.</p>
+                <p>When I'm not coding, you can find me playing tabla, reading books or just sitting ideally listening to music.</p> -->
+                <img src="https://thumbs.dreamstime.com/t/hands-holding-contact-me-38017726.jpg" alt="Contact" class="contact-image">
+            </div>
+            <div class="contact-info">
+                <table class="contact-table">
+                    <tr>
+                        <th>Email</th>
+                        <td>satyamkolhe759@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Contact no.</th>
+                        <td>9309262612</td>
+                    </tr>
+                    <tr>
+                        <th>LinkedIn</th>
+                        <td>
+                            <a href="https://in.linkedin.com/" target="_blank">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>GitHub</th>
+                        <td>
+                            <a href="https://github.com/" target="_blank">
+                                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Twitter</th>
+                        <td>
+                            <a href="https://twitter.com/" target="_blank">
+                                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Satyam Kolhe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

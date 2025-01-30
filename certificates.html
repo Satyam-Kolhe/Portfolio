@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates - Satyam Kolhe</title>
+    <style>
+        /* Include the same styles as index.html, skills.html, and projects.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-22%20171556-Gx06He6Qy3cfSQiSBbE7gsP5MpNcsO.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333333;
+            overflow-x: hidden;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #A5F3FC;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .certificates-grid {
+            display: flex;
+            /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .certificates-card {
+            flex: 1 1 45%;
+            max-width: 45%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .certificates-card img {
+            max-width: 100%; 
+            height: auto;
+        }
+        .certificates-info {
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .certificates-card:hover {
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link" target="_blank">Home</a>          
+            <a href="projects.html" class="nav-link" target="_blank">Projects</a>
+            <a href="certificates.html" class="nav-link" target="_blank">Certificates</a>
+            <a href="skills.html" class="nav-link" target="_blank">Skills</a>
+            <a href="contact.html" class="nav-link" target="_blank">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certificates-grid">
+            <div class="certificates-card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.PXPrGzTx0uNljOvVroeqsgHaFt&pid=Api&P=0&h=180" alt="ML" style="width: 550px; height: 300px;">
+                <div class="certificates-info">
+                    <h3>Machine Learning Specialization</h3>
+                    <p>Coursera - Stanford University</p>
+                </div>
+            </div>
+            <div class="certificates-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.E6JvruxU8L4eApANc9sz2gHaEK&pid=Api&P=0&h=180" alt="DS" style="width: 550px; height: 300px;">
+                <div class="certificates-info">
+                    <h3>Data Science Professional</h3>
+                    <p>IBM Data Science Professional Certificate</p>
+                </div>
+            </div>
+            <div class="certificates-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.p8ruRsXxc7AwG4_KdFqDgwHaFO&pid=Api&P=0&h=180" alt="DL" style="width: 550px; height: 300px;">
+                <div class="certificates-info">
+                    <h3>Deep Learning Specialization</h3>
+                    <p>Coursera - DeepLearning.AI</p>
+                </div>
+            </div>
+            <div class="certificates-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.UjKU4Q24Y3-UQghZz8ZmEwHaFj&pid=Api&P=0&h=180" alt="SQL" style="width: 550px; height: 300px;">
+                <div class="certificates-info">
+                    <h3>SQL Advanced Certification</h3>
+                    <p>HackerRank</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #333; color: #fff; text-align: center; padding: 20px 0; position: fixed; bottom: 0; width: 100%;">
+        <p>&copy; 2025 Satyam Kolhe. All rights reserved.</p>
+    </div>
+</body>
+</html>
+

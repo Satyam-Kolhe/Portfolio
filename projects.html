@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Satyam Kolhe</title>
+    <style>
+        /* Include the same styles as index.html and skills.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-22%20171556-Gx06He6Qy3cfSQiSBbE7gsP5MpNcsO.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333333;
+            overflow-x: hidden;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #A5F3FC;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: flex;
+            /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-card {
+            flex: 1 1 45%;
+            max-width: 45%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card img {
+            max-width: 100%; 
+            height: auto;
+        }
+
+        .project-info {
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link" target="_blank">Home</a>
+            <a href="projects.html" class="nav-link" target="_blank">Projects</a>
+            <a href="certificates.html" class="nav-link" target="_blank">Certificates</a>
+            <a href="skills.html" class="nav-link" target="_blank">Skills</a>
+            <a href="contact.html" class="nav-link" target="_blank">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="Screenshot 2025-01-23 101713.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Recipes Recommender System</h3>
+                    <p>A machine learning-based recipe recommendation system using collaborative filtering.</p>
+                   
+                     <h3>1.User Preferences:</h3>
+                     <p>The system uses historical data, such as user ratings and interactions with recipes, to understand individual preferences.</p>
+                     <p>By finding similar users or recipes, it predicts which recipes a user might enjoy.</p>
+
+                     <h3>2.Algorithms:</h3>
+                     <p>Collaborative filtering techniques, such as user-user or item-item filtering, identify patterns and similarities in user behavior or recipe attributes.</p>
+                     <p>These algorithms suggest new recipes that align with user tastes based on their preferences and the preferences of similar users.</p>
+
+                     <h3>3.Benefits:</h3>
+                     <p>Provides personalized recipe recommendations, making meal planning easier and more enjoyable.</p>
+                     <p>Helps users discover new and exciting recipes they might not have found otherwise.</p>
+                     <p>Increases user engagement by offering tailored suggestions that match their culinary interests.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Screenshot 2024-10-22 183129.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Air Quality Dashboard</h3>
+                    <p>Real-time air quality monitoring dashboard with predictive analytics.</p>
+                    <h3>1.Real-Time Monitoring:</h3>
+                    <p>The dashboard provides real-time monitoring of air quality by collecting data from various sensors and sources.</p>
+                    <p>It displays current levels of pollutants such as PM2.5, PM10, NO2, SO2, and O3, giving users immediate insights into the air quality in their area.</p>
+
+                    <h3>2.Predictive Analytics:</h3>
+                    <p>Utilizes advanced machine learning models to predict future air quality trends based on historical data and environmental factors.</p>
+                    <p>These predictions help users and authorities take proactive measures to mitigate pollution and protect public health.</p>
+
+                    <h3>3.Benefits:</h3>
+                    <p>Enables individuals to make informed decisions about outdoor activities and personal health based on real-time data and forecasts.</p>
+                    <p>Assists policymakers and environmental agencies in planning and implementing effective air quality management strategies.</p>
+                    <p>Enhances public awareness and engagement in efforts to improve air quality and reduce 
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.3ojWK3il2M01eVRg1m7kgwAAAA&pid=Api&P=0&h=180" alt="Project 3">
+                <div class="project-info">
+                    <h3>Customer Segmentation</h3>
+                    <p>Advanced clustering analysis for customer segmentation using K-means.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.nR47kuqnG3A3Mfgg5S2IHQHaEO&pid=Api&P=0&h=180" alt="Project 4">
+                <div class="project-info">
+                    <h3>Sentiment Analysis</h3>
+                    <p>Natural Language Processing project for social media sentiment analysis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #333; color: #fff; text-align: center; padding: 20px 0; position: fixed; bottom: 0; width: 100%;">
+        <p>&copy; 2025 Satyam Kolhe. All rights reserved.</p>
+    </div>
+</body>
+</html>
+
