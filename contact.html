@@ -114,6 +114,33 @@
             vertical-align: middle;
         }
 
+        .feedback-form {
+            margin-top: 40px;
+        }
+
+        .feedback-form input, .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .feedback-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .feedback-form button:hover {
+            background-color: #555;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -139,6 +166,33 @@
             }
         }
     </style>
+    <script>
+        async function sendFeedback(event) {
+            event.preventDefault();
+            const form = event.target;
+
+            const formData = {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value
+            };
+
+            const response = await fetch('YOUR_BACKEND_ENDPOINT', { // Replace with your backend URL
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                alert('Feedback sent successfully!');
+                form.reset();
+            } else {
+                alert('Failed to send feedback. Please try again.');
+            }
+        }
+    </script>
 </head>
 <body>
     <nav class="nav-bar">
@@ -146,7 +200,7 @@
             <a href="index.html" class="nav-link" target="_blank">Home</a>            
             <a href="projects.html" class="nav-link" target="_blank">Projects</a>
             <a href="certificates.html" class="nav-link" target="_blank">Certificates</a>
-            <a href="skills.html" class="nav-link" target="_blank">About Me & Skills</a>
+            <a href="skills.html" class="nav-link" target="_blank">Skills</a>
             <a href="contact.html" class="nav-link" target="_blank">Contact</a>
         </div>
     </nav>
@@ -155,9 +209,6 @@
         <h2 class="section-title">Contact</h2>
         <div class="content">
             <div class="about-text">
-                <!-- <p>Hello! I'm Satyam Kolhe, a passionate Data Science Enthusiast. I love collecting and working on datasets and collecting valuable insights from it help organisations to make future decisions.</p>
-                <p>Along with my experience in Data Science and Machine Learning, I've worked on various projects ranging from naive work to overwhelming projects.</p>
-                <p>When I'm not coding, you can find me playing tabla, reading books or just sitting ideally listening to music.</p> -->
                 <img src="https://thumbs.dreamstime.com/t/hands-holding-contact-me-38017726.jpg" alt="Contact" class="contact-image">
             </div>
             <div class="contact-info">
@@ -195,6 +246,17 @@
                         </td>
                     </tr>
                 </table>
+
+                <!-- Feedback Form -->
+                <div class="feedback-form">
+                    <h3>Send Feedback</h3>
+                    <form onsubmit="sendFeedback(event)">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <textarea id="message" name="message" placeholder="Your Feedback" required></textarea>
+                        <button type="submit">Send Feedback</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -203,4 +265,3 @@
     </footer>
 </body>
 </html>
-
